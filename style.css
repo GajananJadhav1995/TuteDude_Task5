@@ -1,111 +1,193 @@
-html{
-    width: 100vw;
-    height: 100vh;
-    border: 5px solid blue;
-}
-*{ margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-
-
-   
-}
-nav{
-/* display: inline; */
-background-color: rgb(226, 142, 33);
-text-align: center; 
-padding: 20px 0px 20px 0px;
-
+/* RESET DEFAULT BROWSER STYLES */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-ul{
-    
-    font-size: 20px;
-    word-spacing: 5px;
-     display: inline-block;
-     margin: 20px;
-    
-}
-li{
-    
-    list-style-type: none;
-    text-decoration: none;
-    display: inline-block;
-
-    
-}
-
-a{
-    text-decoration: none;
-    text-align: center;
-    color: aliceblue;
-    
-}
-
-a:hover{
-    color: black;
-}
-
-#logo{
-    display: inline-block;
-    width: 200px;
-    height: 60px;
-    float: left;
-    margin-top: 0%;
-    padding: 0%;
-    padding-right: 50px;
-    
-}
-
-#username{
-    margin-top: 20px;
-    float: right;
-    margin-right: 40px;
-    font-size: 18px;
-    background-color: aqua;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 5px;
-    border: 2px solid blue;
-
+/* BODY FULL VIEWPORT HEIGHT */
+body{
+height:100vh;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 
+/* ==========================
+   NAVBAR STYLING
+   Demonstrates display:inline-block
+   ========================== */
 
-button:hover{
-    transform: scale(1.1); }
+.navbar{
+background-color:rgb(226,142,33);
+padding:1.5vh 2vw;
+text-align:center;
+}
 
-#hero{float: right;
-    width: 600px;
-    
+/* NAV SECTIONS */
+
+.nav-left,
+.nav-center,
+.nav-right{
+display:inline-block;   /* assignment requirement */
+vertical-align:middle;
+}
+
+/* LOGO */
+
+.logo{
+width:180px;
 
 }
 
-div{margin-left: 40px;
-    display: inline-block;
+/* MENU */
+
+.nav-center ul{
+list-style:none;
 }
 
-p{
-    text-align: justify;
-    font-size: 20px;
+.nav-center li{
+display:inline-block;
+margin:0 1vw;
+font-size:1.2vw;
 }
 
-h1{ margin-top: 70px;
-    font-size: 60px;
+.nav-center a{
+text-decoration:none;
+color:white;
 }
 
-h2{ margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    text-decoration: underline red ;
+.nav-center a:hover{
+color:black;
 }
 
-#bookYourservice{
-    margin-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 40px;
-    background-color: aqua;
-    border-radius: 10px;
+/* USER BUTTON */
+
+.username{
+margin-left:2vw;
+padding:.6vh 1.5vw;
+font-size:1vw;
+background-color:aqua;
+border-radius:5px;
+border:2px solid blue;
+cursor:pointer;
 }
 
+
+/* ==========================
+   HERO SECTION LAYOUT
+   Two Div Layout Requirement
+   ========================== */
+
+.hero{
+height:80vh;                /* viewport unit */
+padding:5vh 5vw;
+}
+
+/* LEFT CONTENT */
+
+.hero-left{
+display:inline-block;
+width:48%;
+vertical-align:middle;
+}
+
+/* RIGHT IMAGE */
+
+.hero-right{
+display:inline-block;
+width:48%;
+vertical-align:middle;
+text-align:right;
+}
+
+.hero-right img{
+width:80%;
+}
+
+
+/* TEXT STYLING */
+
+.hero-left h1{
+font-size:3vw;
+margin-bottom:2vh;
+}
+
+.hero-left h2{
+font-size:1.6vw;
+margin-bottom:2vh;
+text-decoration:underline red;
+}
+
+.highlight{
+color:brown;
+}
+
+.hero-left p{
+font-size:1vw;
+line-height:1.6;
+}
+
+/* BUTTON */
+
+.book-service{
+margin-top:3vh;
+padding:1vh 2vw;
+font-size:1.5vw;
+background-color:aqua;
+border-radius:10px;
+cursor:pointer;
+}
+
+.book-service:hover{
+transform:scale(1.1);
+transition:.3s;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+   ========================== */
+
+@media (max-width:768px){
+
+.hero-left,
+.hero-right{
+display:block;
+width:100%;
+text-align:center;
+}
+
+.hero-right img{
+width:70%;
+margin-top:20px;
+}
+
+.hero-left h1{
+font-size:28px;
+}
+
+.hero-left h2{
+font-size:22px;
+}
+
+.hero-left p{
+font-size:16px;
+}
+
+.book-service{
+font-size:20px;
+}
+
+.nav-left,
+.nav-center,
+.nav-right{
+display:block;
+margin:10px 0;
+}
+
+.nav-center li{
+display:block;
+margin:10px 0;
+}
+
+}

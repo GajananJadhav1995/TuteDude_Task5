@@ -1,92 +1,136 @@
-# Laundry Services Hero Section – HTML & CSS Project
+# Laundry Service Hero Section Website
 
-This project is a simple **Laundry Services landing page** created using **HTML5 and CSS3**.
-It demonstrates a basic website layout including a **navigation bar, hero section, and call-to-action button**.
-
-The goal of this project is to practice **HTML structure, CSS styling, hover effects, and layout design** for beginners learning frontend development.
+This project is a simple responsive landing page for a **Laundry Service Website** created using **HTML and CSS**.
+The goal of this assignment is to demonstrate core CSS concepts such as **display properties, viewport units, responsive design, and layout structuring**.
 
 ---
 
-## 📌 Features
+## Project Features
 
-* Navigation bar with menu items (Home, Services, About Us, Contact Us)
-* Company logo displayed in the navbar
-* Username button on the right side of the navbar
-* Hero section with image and heading
-* Highlighted text using `<span>`
-* Service description paragraph
-* Call-to-action button: **Book Your Service Now**
-* Hover effects on buttons and menu items
-
----
-
-## 🛠 Technologies Used
-
-* **HTML5**
-* **CSS3**
-* **Visual Studio Code**
-* Web Browser (Chrome / Edge / Firefox)
+* Responsive navigation bar
+* Hero section with **two-column layout**
+* Clean UI design suitable for a laundry service
+* Hover effects on buttons and links
+* Responsive design for smaller screens
+* Proper use of **display: inline-block**
+* Use of **viewport units (vh, vw)** for layout control
 
 ---
 
-## 📂 Project Structure
+## Layout Structure
+
+The page is divided into two main sections:
+
+### 1. Navbar
+
+The navigation bar contains:
+
+* Logo on the left
+* Navigation menu in the center
+* Username button on the right
+
+CSS `display: inline-block` is used to align these elements in a single row without using floats.
+
+---
+
+### 2. Hero Section
+
+The hero section is divided into **two separate divs**:
+
+#### Left Section
+
+Contains:
+
+* Main heading
+* Subheading
+* Description paragraph
+* Call-to-action button
+
+#### Right Section
+
+Contains:
+
+* Laundry service hero image
+
+This layout helps demonstrate **two-column responsive layout design**.
+
+---
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* Responsive Design (Media Queries)
+* Viewport Units (`vh`, `vw`)
+* Display Property (`inline-block`)
+
+---
+
+## Folder Structure
 
 ```
-laundry-services-project
+project-folder
 │
 ├── index.html
 ├── style.css
 │
 └── images
-    ├── hero.png
-    └── logo (2).png
+    ├── logo (2).png
+    └── hero.png
 ```
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
-Follow these steps to run the project on your computer:
-
-1. Download or clone this repository
+1. Download or clone the repository
 
 ```
 git clone https://github.com/your-username/your-repository-name.git
 ```
 
-2. Open the project folder in **Visual Studio Code**
+2. Open the project folder.
 
-3. Make sure the following files exist:
+3. Double-click **index.html**
 
-   * `index.html`
-   * `style.css`
-   * `images` folder (containing hero.png and logo image)
+OR
 
-4. Open **index.html**
-
-5. Right-click and select **Open with Live Server**
-   OR simply double-click the file to open it in your browser.
-
-The website will display the **Laundry Services hero section layout**.
+4. Open `index.html` using **Live Server in VS Code**.
 
 ---
 
-## 📚 What I Learned From This Project
+## Responsive Design
 
-* Creating webpage structure using HTML
-* Styling elements using CSS
-* Working with navigation bars
-* Using hover effects with `:hover`
-* Working with images and layout positioning
-* Creating a hero section for a landing page
+The website includes a **media query for screens below 768px**.
+
+Adjustments include:
+
+* Navbar elements stacked vertically
+* Hero section converted to single column
+* Text and button sizes optimized for mobile devices
 
 ---
 
-## 👨‍💻 Author
+## CSS Concepts Demonstrated
+
+This project demonstrates several CSS concepts required in the assignment:
+
+* `display: inline-block`
+* Layout structuring with multiple divs
+* Responsive design using `@media`
+* Viewport units (`vh`, `vw`)
+* Hover effects using `:hover`
+* Clean class-based styling
+
+---
+
+## Author
 
 **Gajanan Jadhav**
 
----
+GitHub:
+https://github.com/GajananJadhav1995
 
-⭐ If you like this project, consider giving the repository a **star**.
 
+
+#
